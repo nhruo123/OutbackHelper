@@ -31,6 +31,13 @@ function tts.rectangle(room, entity)
     return utils.rectangle(x - 7, y - 7, 14, 14)
 end
 
+tts.fieldInformation = {
+    startDisappearTime = {
+        fieldType = "number",
+        minimumValue = 0,
+    }
+}
+
 function tts.sprite(room, entity)
     local x, y = entity.x or 0, entity.y or 0
     local time = tonumber(entity["startDisappearTime"]) or 15
